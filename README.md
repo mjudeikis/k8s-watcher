@@ -1,4 +1,4 @@
-# K8S watcher sceleton
+# K8S watcher skeleton
 
 ### Create user and get token
     oadm policy add-cluster-role-to-user cluster-admin system:serviceaccount:default:watcher
