@@ -1,11 +1,11 @@
 # K8S watcher skeleton
 
 ### Create user and get token
-    oadm policy add-cluster-role-to-user cluster-admin system:serviceaccount:default:watcher
     oc create serviceaccount watcher
+    oadm policy add-cluster-role-to-user cluster-admin system:serviceaccount:default:watcher
+   
 
  If you want find framework libary, copy it from github, instead of k8s.io kubernetes project
- 
  
 ### build:
     CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo .
